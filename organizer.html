@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organizer — Christmas Secret Mission</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="organizer">
+    <header class="site-header">
+      <a class="brand" href="index.html">Christmas Secret Mission</a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="character.html">Character</a>
+        <a href="mission.html">Mission</a>
+        <a href="organizer.html">Organizer</a>
+        <a href="#" id="logout-link" class="is-hidden">Logout</a>
+      </nav>
+    </header>
+
+    <main class="page">
+      <h1>Mission Control</h1>
+      <p class="page-lead">Organizer-only view of every agent's assignment. Handle with care.</p>
+
+      <div class="access-denied" id="organizer-denied">
+        <strong>🔒 Access denied.</strong> This page is only visible to the mission organizer.
+      </div>
+
+      <div id="organizer-content" class="is-hidden">
+        <div class="mission-table-wrap">
+          <table class="mission-table">
+            <thead>
+              <tr>
+                <th>Nickname</th>
+                <th>Code</th>
+                <th>Character</th>
+                <th>Mission</th>
+              </tr>
+            </thead>
+            <tbody id="participants-table-body">
+              <tr>
+                <td colspan="4">Loading roster…</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>❄ Shhh... it's a secret. ❄</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

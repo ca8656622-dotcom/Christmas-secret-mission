@@ -1,0 +1,359 @@
+/* Christmas Secret Mission — "North Pole Ops Room" theme.
+   Dark pine green, gold string-light accents, wax-seal red, falling snow. */
+
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&family=Nunito:wght@400;600;700&display=swap');
+
+:root {
+  --green-deep: #04241a;
+  --green: #0b3d2e;
+  --green-light: #145a3c;
+  --gold: #d4af37;
+  --gold-soft: #f0d78c;
+  --red: #b3272d;
+  --red-dark: #7a1a1f;
+  --snow: #f7f3e8;
+  --ink: #12241d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Nunito', system-ui, sans-serif;
+  color: var(--snow);
+  background: radial-gradient(ellipse at top, var(--green-light) 0%, var(--green) 45%, var(--green-deep) 100%);
+  position: relative;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Mountains of Christmas', 'Nunito', system-ui, sans-serif;
+  color: var(--gold-soft);
+  letter-spacing: 0.02em;
+}
+
+a {
+  color: var(--gold-soft);
+}
+
+/* ---------- header / nav ---------- */
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 1.1rem 1.75rem;
+  background: linear-gradient(180deg, var(--green-deep), var(--green));
+  border-bottom: 3px dashed var(--gold);
+  position: relative;
+  z-index: 5;
+}
+
+.brand {
+  font-family: 'Mountains of Christmas', cursive;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--gold-soft);
+  text-shadow: 0 0 12px rgba(212, 175, 55, 0.35);
+}
+
+.brand::before {
+  content: '🎄 ';
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--snow);
+  font-weight: 600;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.site-nav a:hover {
+  background: rgba(212, 175, 55, 0.18);
+  color: var(--gold-soft);
+}
+
+.site-nav a.is-hidden {
+  display: none;
+}
+
+#logout-link {
+  border: 1px solid var(--gold);
+}
+
+/* ---------- page shell ---------- */
+
+.page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.page-lead {
+  color: var(--gold-soft);
+  opacity: 0.9;
+}
+
+.badge-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 1.25rem 0;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid var(--gold);
+  color: var(--gold-soft);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.cta-row {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.65rem 1.4rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  border: 2px solid transparent;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background: linear-gradient(180deg, var(--red), var(--red-dark));
+  color: var(--snow);
+  box-shadow: 0 6px 16px rgba(179, 39, 45, 0.4);
+}
+
+.btn-gold {
+  background: linear-gradient(180deg, var(--gold-soft), var(--gold));
+  color: var(--green-deep);
+  box-shadow: 0 6px 16px rgba(212, 175, 55, 0.3);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--gold-soft);
+  border: 2px solid var(--gold);
+}
+
+/* ---------- footer ---------- */
+
+.site-footer {
+  text-align: center;
+  padding: 1.75rem;
+  color: var(--gold-soft);
+  opacity: 0.75;
+  border-top: 3px dashed var(--gold);
+  background: var(--green-deep);
+  position: relative;
+  z-index: 2;
+}
+
+/* ---------- login form ---------- */
+
+.mission-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  max-width: 340px;
+  margin-top: 1.25rem;
+  background: rgba(4, 36, 26, 0.55);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  border-radius: 14px;
+  padding: 1.5rem;
+}
+
+.mission-form label {
+  font-weight: 700;
+  color: var(--gold-soft);
+  margin-top: 0.5rem;
+}
+
+.mission-form input {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--gold);
+  border-radius: 8px;
+  background: var(--snow);
+  color: var(--ink);
+  font-size: 1rem;
+}
+
+.mission-form button {
+  margin-top: 1.1rem;
+}
+
+.form-error {
+  min-height: 1.4em;
+  color: #ffb4b4;
+  font-weight: 700;
+}
+
+/* ---------- cards ---------- */
+
+.mission-card {
+  border: 1px solid var(--gold);
+  border-radius: 14px;
+  padding: 1.5rem;
+  background: linear-gradient(160deg, rgba(212, 175, 55, 0.12), rgba(4, 36, 26, 0.55));
+  margin-top: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.mission-card::before {
+  content: '❄';
+  position: absolute;
+  top: -14px;
+  right: 18px;
+  font-size: 1.6rem;
+  color: var(--gold-soft);
+}
+
+.mission-card h2 {
+  margin-top: 0;
+}
+
+.seal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, var(--red), var(--red-dark));
+  color: var(--snow);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.35);
+}
+
+/* ---------- organizer table ---------- */
+
+.mission-table-wrap {
+  overflow-x: auto;
+  margin-top: 1.5rem;
+  border: 1px solid var(--gold);
+  border-radius: 12px;
+}
+
+.mission-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(4, 36, 26, 0.6);
+}
+
+.mission-table th,
+.mission-table td {
+  text-align: left;
+  padding: 0.65rem 0.9rem;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+  white-space: nowrap;
+}
+
+.mission-table th {
+  color: var(--gold-soft);
+  font-family: 'Mountains of Christmas', cursive;
+  font-size: 1.05rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.mission-table tr:last-child td {
+  border-bottom: none;
+}
+
+.access-denied {
+  border: 1px solid var(--red);
+  background: rgba(179, 39, 45, 0.15);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+/* ---------- snowfall ---------- */
+
+.snowfall {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.snowflake {
+  position: absolute;
+  top: -10vh;
+  color: var(--snow);
+  opacity: 0.85;
+  animation-name: snow-fall, snow-drift;
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-direction: normal, alternate;
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.4));
+}
+
+@keyframes snow-fall {
+  from {
+    transform: translateY(-10vh);
+  }
+  to {
+    transform: translateY(110vh);
+  }
+}
+
+@keyframes snow-drift {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: var(--drift, 20px);
+  }
+}
+
+@media (max-width: 640px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

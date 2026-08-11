@@ -1,0 +1,119 @@
+[
+  {
+    "nickname": "Dad",
+    "code": "318",
+    "isOrganizer": false,
+    "character": {
+      "name": "Santa",
+      "description": "Leader of the Christmas Mission. Spreads joy, delivers surprises, and keeps the holiday spirit alive."
+    },
+    "mission": {
+      "title": "Mission: Secret Santa",
+      "details": "Your mission is to secretly surprise Abby and Amos with thoughtful Christmas gifts. Keep your identity a secret until the big reveal!"
+    }
+  },
+  {
+    "nickname": "Mom",
+    "code": "472",
+    "isOrganizer": false,
+    "character": {
+      "name": "Elf",
+      "description": "Santa's trusted helper who keeps Christmas running smoothly with creativity and cheer."
+    },
+    "mission": {
+      "title": "Mission: Holiday Helper",
+      "details": "Your mission is to secretly surprise Dad and Winnie's household with thoughtful Christmas gifts. Remember to include something that will make Winnie's daughter smile. Keep your identity a secret until the big reveal!"
+    }
+  },
+  {
+    "nickname": "Abby",
+    "code": "805",
+    "isOrganizer": true,
+    "character": {
+      "name": "Gift Guardian",
+      "description": "Protector of presents and keeper of Christmas surprises."
+    },
+    "mission": {
+      "title": "Mission: Gift Guardian",
+      "details": "Your mission is to secretly surprise Deno and Marion's household with thoughtful Christmas gifts. Don't forget to include something that will make Marion's son smile. Keep your identity a secret until the big reveal!"
+    }
+  },
+  {
+    "nickname": "Prudence",
+    "code": "146",
+    "isOrganizer": false,
+    "character": {
+      "name": "Snowman",
+      "description": "A cheerful friend who brings warmth and smiles even on the coldest Christmas day."
+    },
+    "mission": {
+      "title": "Mission: Snowman",
+      "details": "Your mission is to secretly surprise Jackie and Dad with thoughtful Christmas gifts. Keep your identity a secret until the big reveal!"
+    }
+  },
+  {
+    "nickname": "Deno",
+    "code": "629",
+    "isOrganizer": false,
+    "character": {
+      "name": "Penguin",
+      "description": "A playful Christmas companion who spreads laughter and festive cheer."
+    },
+    "mission": {
+      "title": "Mission: Penguin",
+      "details": "Your mission is to secretly surprise Mom and Abby with thoughtful Christmas gifts. Keep your identity a secret until the big reveal!"
+    }
+  },
+  {
+    "nickname": "Amos",
+    "code": "953",
+    "isOrganizer": false,
+    "character": {
+      "name": "Reindeer",
+      "description": "Swift, dependable, and always ready to guide the Christmas journey."
+    },
+    "mission": {
+      "title": "Mission: Reindeer",
+      "details": "Your mission is to secretly surprise Prudence and Winnie's household with thoughtful Christmas gifts. Remember to include something that will make Winnie's daughter smile. Keep your identity a secret until the big reveal!"
+    }
+  },
+  {
+    "nickname": "Jackie",
+    "code": "281",
+    "isOrganizer": false,
+    "character": {
+      "name": "Snowflake",
+      "description": "Unique, graceful, and full of Christmas sparkle."
+    },
+    "mission": {
+      "title": "Mission: Snowflake",
+      "details": "Your mission is to secretly surprise Deno and Marion's household with thoughtful Christmas gifts. Remember to include something that will make Marion's son smile. Keep your identity a secret until the big reveal!"
+    }
+  },
+  {
+    "nickname": "Winnie",
+    "code": "714",
+    "isOrganizer": false,
+    "character": {
+      "name": "Bell Keeper",
+      "description": "Guardian of joyful Christmas bells who spreads festive cheer wherever she goes."
+    },
+    "mission": {
+      "title": "Mission: Bell Keeper",
+      "details": "Your mission is to secretly surprise Amos and Jackie with thoughtful Christmas gifts. Keep your identity a secret until the big reveal!"
+    }
+  },
+  {
+    "nickname": "Marion",
+    "code": "560",
+    "isOrganizer": false,
+    "character": {
+      "name": "Gingerbread",
+      "description": "Sweet, warm-hearted, and always bringing joy to the Christmas celebration."
+    },
+    "mission": {
+      "title": "Mission: Gingerbread",
+      "details": "Your mission is to secretly surprise Mom and Prudence with thoughtful Christmas gifts. Keep your identity a secret until the big reveal!"
+    }
+  }
+]
